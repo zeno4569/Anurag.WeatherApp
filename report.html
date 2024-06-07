@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Project Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        p {
+            line-height: 1.6;
+        }
+        .section-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .dependencies {
+            margin-bottom: 20px;
+        }
+        .code {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .conclusion {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project Report: Weather App</h1>
+        <div class="section">
+            <h2>1. Introduction</h2>
+            <p>The Weather App is a Python application designed to provide users with current weather conditions and a 5-day forecast for a specified location.</p>
+        </div>
+        <div class="section">
+            <h2>2. Dependencies</h2>
+            <p class="dependencies">The following dependencies are used in the Weather App:</p>
+            <ul>
+                <li>requests: This library is used to make HTTP requests to the OpenWeatherMap API.</li>
+                <li>tkinter: It is a standard GUI library in Python used to create the user interface.</li>
+                <li>ttk: The themed tkinter module provides access to the Tk themed widget set.</li>
+                <li>messagebox: This module from the tkinter library is used to display error messages.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>3. Logic of the Code</h2>
+            <p>The Weather App follows a straightforward logic:</p>
+            <ul>
+                <li>Weather Data Retrieval</li>
+                <li>User Interface</li>
+                <li>Display Weather Information</li>
+                <p> The Weather App makes sense in this simple way:
+
+                    Weather Data Retrieval: To obtain the most recent weather information as well as a five-day prediction for the given area, the get_weather() function makes HTTP calls to the OpenWeatherMap API. Authentication is done via the API key.
+                    
+                    User Interface: A graphical user interface is created using the tkinter library. To retrieve weather information, users can enter their location (the name of the city) in an entry field and click a button.
+                    
+                    Present Weather Information: When a user selects the "Get Weather" button, the show_weather() function is called. To obtain weather information, including current conditions and forecasts, it invokes the get_weather() function. Labels are then used to present the retrieved data in the user interface.
+                    </p>
+            </ul>
+        </div>
+        <div class="section conclusion">
+            <h2>Conclusion</h2>
+            <p>In conclusion, the Weather App fulfills its purpose of providing users with accurate and timely weather information in a convenient manner.</p>
+        </div>
+    </div>
+</body>
+</html>
